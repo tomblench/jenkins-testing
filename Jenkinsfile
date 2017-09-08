@@ -7,6 +7,6 @@ node {
     def workspace = pwd()
     print "workspace ${workspace}\n"
 
-    def t = new Test(workspace)
-    t.doTag()
+    def t = new Test()
+    t.doTag(workspace)
 }
