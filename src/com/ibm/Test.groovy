@@ -8,7 +8,7 @@ import org.eclipse.jgit.storage.file.*;
 import org.eclipse.jgit.revwalk.*;
 import org.eclipse.jgit.api.*;
 
-
+@NonCPS
 def doTag(String directory) {
 
     def builder = new FileRepositoryBuilder();
