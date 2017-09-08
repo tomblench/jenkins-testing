@@ -13,7 +13,7 @@ def doTag(String directory) {
     def builder = new FileRepositoryBuilder();
 
     print ("files\n")
-    print (new File(".").list().join(", "))
+    print (new File(pwd()).list().join(", "))
     
     def repository = builder.setGitDir(new File(".git"))
     .readEnvironment() // scan environment GIT_* variables
