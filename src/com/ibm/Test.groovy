@@ -9,7 +9,7 @@ import org.eclipse.jgit.revwalk.*;
 import org.eclipse.jgit.api.*;
 
 
-def doTag(directory) {
+def doTag(String directory) {
 
     def builder = new FileRepositoryBuilder();
     def repository = builder.setGitDir(new File("${directory}/.git"))
