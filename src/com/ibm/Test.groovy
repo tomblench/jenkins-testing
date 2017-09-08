@@ -11,6 +11,10 @@ import org.eclipse.jgit.api.*;
 def doTag(String directory) {
 
     def builder = new FileRepositoryBuilder();
+
+    print ("files\n")
+    print (new File(".").list().join(", "))
+    
     def repository = builder.setGitDir(new File(".git"))
     .readEnvironment() // scan environment GIT_* variables
     .findGitDir() // scan up the file system tree
